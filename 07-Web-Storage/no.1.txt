@@ -1,0 +1,15 @@
+Apa itu localStorage?
+Apa itu cookies?
+Apa perbedaan antara localStorage dan sessionStorage?
+
+Jawab : 
+
+1. localStorage adalah Penyimpanan data pencarian yang dapat menyimpan data sebesar 5MB dan tidak akan expired
+
+2. Cookies adalah data kecil yang dikirim dari situs web 
+dan disimpan di komputer kita oleh web browser saat kita 
+menjelajah. Disebut data kecil karena maksimum data yang 
+dapat disimpan dalam cookies adalah 4096 bytes (4 KB).
+
+3. localStorage : data yang disimpan tidak memiliki waktu expired
+sessionStorage : data yang disimpan akan hilang jika browser ditutup
