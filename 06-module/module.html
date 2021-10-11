@@ -18,7 +18,7 @@
         id="name"
       />
       <br />
-      <button id="greeting-btn" type="submit">submit</button>
+      <button type="submit">submit</button>
     </form>
     <br />
     <h3>Login Form</h3>
@@ -35,14 +35,12 @@
       <label for="password">password</label>
       <input type="text" id="input-password" name="password" id="password" />
       <br />
-      <button id="login-btn" type="submit">submit</button>
+      <button type="submit">submit</button>
     </form>
 
-    <script type="module">
+    <script>
       // IMPORT HERE
-      import sayHello from "./module-helper.js";
-      import {greeting} from "./module-helper.js";
-      import validateLoginData from "./modules-authentication.js"
+      from sayHello import "06-module.html";
 
       const elFormGreeting = document.querySelector("#form-greeting");
       const elFormLogin = document.querySelector("#form-login");
@@ -52,19 +50,7 @@
       const elInputPassword = document.querySelector("#input-password");
 
       // EDIT HERE
-      sayHello();
-      const elGreetingButton = document.querySelector('#greeting-btn');
-      elGreetingButton.addEventListener('click', function(event){
-          event.preventDefault();
-          greeting(elInputName.value);
-      });
-
-      const elLoginButton = document.querySelector('#login-btn');
-      elLoginButton.addEventListener('click', function(event){
-          event.preventDefault();
-          let message = validateLoginData(elInputEmail.value, elInputPassword.value);
-          alert(message);
-      });
+      sayHello;
 
     </script>
   </body>
