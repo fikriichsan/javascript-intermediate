@@ -86,12 +86,10 @@ class Student {
     }
     
     takeNewCourse(course) {
-      // check if course already in array
       const isCourseExist = this.courseOfferings.find((courseOffering) => {
         return courseOffering.course.getSubject() === course.getSubject();
       });
   
-      // push the course into array if the course not exist yet
       if (this.courseOfferings.length === 0 || !isCourseExist) {
         this.courseOfferings.push(new CourseOffering(course));
         course.decreaseQuota();
